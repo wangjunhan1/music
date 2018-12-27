@@ -1,7 +1,10 @@
 <template>
-  <div>
+  <div id="home" @touchmove.prevent>
     <home-header></home-header>
     <home-tab></home-tab>
+    <keep-alive>
+      <router-view></router-view>
+    </keep-alive>
   </div>
 </template>
 
